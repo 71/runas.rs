@@ -1,0 +1,13 @@
+[package]
+name = "runas"
+version = "0.1.0"
+authors = ["Grégoire Geis <opensource@gregoirege.is>"]
+edition = "2021"
+build = "build.rs"
+license = "ICS"
+readme = "README.md"
+repository = "https://github.com/71/runas.rs"
+
+[dependencies]
+widestring = "^0.5"
+windows = { version = "^0.28", features = ["std", "Win32_Foundation", "Win32_Security", "Win32_System_Threading", "Win32_UI_Shell"] }
